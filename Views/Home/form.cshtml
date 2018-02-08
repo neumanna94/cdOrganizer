@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Enter a CD.</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <h1>Enter a Songs Name to Add to your Library:</h1>
+    <form action='/mymusic' method='post'>
+      <div class='form-group'>
+        <label for='title'>Enter Titles Name:</label>
+        <input id='title' name='title' class='form-control' type='text'>
+      </div>
+      <select class="form-control" name="genre">
+        <option value="Rock">Rock</option>
+        <option value="German Techno">German Techno</option>
+        <option value="K-POP">K-POP</option>
+        <option value="Hip-Hop">Hip-Hop</option>
+        <option value="Folk Music">Folk Music</option>
+      </select>
+      <div class='form-group'>
+        <label for='artist'>Enter Artists Name</label>
+        <input id='artist' name='artist' class='form-control' type='text'>
+      </div>
+      <button type='submit' class='btn'>Go!</button>
+    </form>
+  </body>
+</html>
