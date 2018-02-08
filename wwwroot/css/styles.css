@@ -22,6 +22,14 @@ h1 {
     color: white;
 }
 
-h2, h3,h4,h5,p,.form-group {
+h2, h3,h4,h5,p,.form-group, a {
     color: white;
+}
+
+a:hover{
+    color: red;
+}
+
+.btn a {
+    color: #328CC1;
 }
