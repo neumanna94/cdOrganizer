@@ -15,7 +15,7 @@ namespace CDOrganizer.Models
             _title = titleIn;
             _genre = genreIn;
             _artist = artistIn;
-            _id = _allCds.Count;
+            _id = _allCds.Count + 1;
         }
         //GETTERS
         public string getTitle()
@@ -83,6 +83,9 @@ namespace CDOrganizer.Models
         public static void ClearAll(){
             _allCds.Clear();
         }
+        // public static List<CD> GetAllSorted(){
+        //
+        // }
         public static CD Find(int searchId){
             return _allCds[searchId-1];
         }

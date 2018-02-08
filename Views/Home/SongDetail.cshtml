@@ -1,0 +1,10 @@
+@{
+  Layout = "_Layout";
+}
+<h1>Artist: @Model.getArtist()</h1>
+<h4>Title: @Model.getTitle()</h4>
+<h4>Genre: @Model.getGenre()</h4>
+<p> Select the button to edit a component </p>
+<form action="/mymusic">
+  <input type="submit" value="All Music" />
+</form>

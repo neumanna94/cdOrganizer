@@ -1,12 +1,27 @@
 div#footer {
     position:fixed;
-    bottom:0px;
+    bottom: 0px;
     left:0px;
     width:100%;
-    color:#CCC;
+    color:white;
     background:#333;
-    padding:8px;
+    text-align: center;
 }
 h1 {
     color:red;
+}
+
+#footer {
+    text-align: center;
+}
+
+body {
+    background-color: #328CC1;
+}
+h1 {
+    color: white;
+}
+
+h2, h3,h4,p,.form-group {
+    color: white;
 }

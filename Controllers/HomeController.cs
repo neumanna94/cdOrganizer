@@ -6,7 +6,7 @@ namespace CDOrganizer.Controllers
 {
     public class HomeController : Controller
     {
-        [HttpGet("/form")]
+        [HttpGet("/")]
         public ActionResult Form(){
             return View();
         }
@@ -34,6 +34,10 @@ namespace CDOrganizer.Controllers
             fun.PushToList();
             List<CD> allCDS = CD.GetAll();
             return View(allCDS);
+        }
+        [HttpGet("/mymusic/{id}")]
+        public ActionResult SongDetail(int id){
+            return View(CD.Find(id));
         }
     }
 }

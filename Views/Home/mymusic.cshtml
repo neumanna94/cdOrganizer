@@ -7,11 +7,11 @@
         <h1> All Albums: </h1>
         @foreach(var item in Model)
         {
+            <h4>Artist:<a href='/mymusic/@item.GetId()'> @item.getArtist()</a></h4>
             <p>Title: @item.getTitle()</p>
             <p>Genre: @item.getGenre()</p>
-            <p>Artist: @item.getArtist()</p>
         }
-        <a href='/form'>Create a new CD</a>
+        <a href='/'>Create a new CD</a>
         <a href='/mymusic/delete'>Delete All Music</a>
         </div>
     </div>

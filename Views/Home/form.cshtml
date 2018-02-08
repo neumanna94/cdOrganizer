@@ -7,6 +7,10 @@
             <h1>Enter a Songs Name to Add to your Library:</h1>
             <form action='/mymusic' method='post'>
               <div class='form-group'>
+                <label for='artist'>Enter Artists Name</label>
+                <input id='artist' name='artist' class='form-control' type='text'>
+              </div>
+              <div class='form-group'>
                 <label for='title'>Enter Titles Name:</label>
                 <input id='title' name='title' class='form-control' type='text'>
               </div>
@@ -17,10 +21,6 @@
                 <option value="Hip-Hop">Hip-Hop</option>
                 <option value="Folk Music">Folk Music</option>
               </select>
-              <div class='form-group'>
-                <label for='artist'>Enter Artists Name</label>
-                <input id='artist' name='artist' class='form-control' type='text'>
-              </div>
               <button type='submit' class='button'>Save this Song</button>
             </form>
             <form action="/mymusic">
