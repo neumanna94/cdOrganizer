@@ -17,28 +17,28 @@ namespace CDOrganizer.Models
         //GETTERS
         public string getTitle()
         {
-            return null;
+            return _title;
         }
         public string getGenre()
         {
-            return null;
+            return _genre;
         }
         public string getArtist()
         {
-            return null;
+            return _artist;
         }
         //SETTERS
-        public void setTitle()
+        public void setTitle(string titleIn)
         {
-
+            _title = titleIn;
         }
-        public void setGenre()
+        public void setGenre(string genreIn)
         {
-
+            _genre = genreIn;
         }
-        public void setArtist()
+        public void setArtist(string artistIn)
         {
-
+            _artist = artistIn;
         }
         public void PushToList(CD pushThisCD)
         {
