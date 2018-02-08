@@ -1,7 +1,18 @@
-<h1> All Albums: </h1>
-@foreach(var item in Model)
-{
-    <p>Title: @item.getTitle()</p>
-    <p>Genre: @item.getGenre()</p>
-    <p>Artist: @item.getArtist()</p>
+@{
+  Layout = "_Layout";
 }
+<body>
+    <div = "container">
+        <div ="col-md-12">
+        <h1> All Albums: </h1>
+        @foreach(var item in Model)
+        {
+            <p>Title: @item.getTitle()</p>
+            <p>Genre: @item.getGenre()</p>
+            <p>Artist: @item.getArtist()</p>
+        }
+        <a href='/form'>Create a new CD</a>
+        <a href='/mymusic/delete'>Delete All Music</a>
+        </div>
+    </div>
+</body>

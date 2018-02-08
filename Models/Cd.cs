@@ -80,5 +80,11 @@ namespace CDOrganizer.Models
         {
             return _allCds;
         }
+        public static void ClearAll(){
+            _allCds.Clear();
+        }
+        public static CD Find(int searchId){
+            return _allCds[searchId-1];
+        }
     }
 }

@@ -10,14 +10,17 @@ namespace CDOrganizer.Controllers
         public ActionResult Form(){
             return View();
         }
-        [HttpGet("/index")]
-        public ActionResult Index(){
-            return View();
+        [HttpGet("/mymusic/delete")]
+        public ActionResult DeleteAll()
+        {
+            CD.ClearAll();
+            List<CD> allCds = CD.GetAll();
+            return View("mymusic", allCds);
         }
         [HttpGet("/mymusic")]
-        public ActionResult DisplayAll(){
-            List<CD> allCDS = CD.GetAll();
-            return View(allCDS);
+        public ActionResult MyMusicGet(){
+            List<CD> allCds = CD.GetAll();
+            return View("mymusic",allCds);
         }
         [HttpPost("/mymusic")]
         public ActionResult MyMusic(){
